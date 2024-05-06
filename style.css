@@ -1,0 +1,86 @@
+html, body, div, span, h1, h2, h3, p, a, img, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  line-height: 2;
+  direction: rtl;
+}
+a img {
+  border: none;
+}
+body {
+  color: #333;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'vazirmatn', Roboto, sans-serif;
+  background: #eefff2;
+}
+h1 {
+  font-size: 27px;
+  font-weight: 900;
+  padding: 0 10px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.gap {
+  padding: 1em 0 0;
+}
+.padDown {
+  padding: 40px 0;
+}
+.outer {
+  padding: 20px;
+  overflow-x: hidden;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.logo {
+  width: 400px;
+  height: 86;
+}
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social a:hover {
+  color: #fff;
+  border-radius: 5px;
+}
+.social a {
+  display: inline-block;
+  color: inherit;
+  padding: 15px 0 10px 0;
+  width: 90px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: .5em;
+}
+.social-icon {
+  fill: #38a250;
+}
+.social a:hover .social-icon {
+  filter: brightness(0) invert(1);
+}
+.social-name {
+  color: #38a250;
+}
+.social-name:hover {
+  background: #1c1c1c;
+}
