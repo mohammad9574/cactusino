@@ -5,6 +5,7 @@ html, body, div, span, h1, h2, h3, p, a, img, section {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
+  direction: ltr;
 }
 html {
   line-height: 2;
