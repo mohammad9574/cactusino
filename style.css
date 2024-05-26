@@ -73,9 +73,9 @@ img {
   width: 30px;
   height: 30px;
 }
-.social a:hover .social-icon {
+/* .social a:hover .social-icon {
   filter: brightness(0) invert(1);
-}
+} */
 .social-name {
   color: #333;
 }
