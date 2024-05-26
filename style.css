@@ -66,8 +66,8 @@ img {
 .social a {
   display: inline-block;
   color: inherit;
-  padding: 15px 0 10px 0;
-  width: 90px;
+  padding: 12px 0 5px 0;
+  width: 60px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
