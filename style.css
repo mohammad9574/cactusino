@@ -73,13 +73,13 @@ img {
   margin: .5em;
 }
 .social-icon {
-  fill: #38a250;
+  fill: #333;
 }
 .social a:hover .social-icon {
   filter: brightness(0) invert(1);
 }
 .social-name {
-  color: #38a250;
+  color: #333;
 }
 .social-name:hover {
   background: #1c1c1c;
