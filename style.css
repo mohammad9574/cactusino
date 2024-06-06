@@ -48,8 +48,6 @@ img {
   height: 100vh;
 }
 .profile {
-  margin-top: 40px;
-  border: 3px solid #fff;
   border-top-left-radius: 60% 60%;
   border-top-right-radius: 100% 75%;
   border-bottom-right-radius: 100% 90%;
@@ -76,12 +74,3 @@ img {
 .social-name img {
   width: 32px;
 }
-/* .social a:hover .social-icon {
-  filter: brightness(0) invert(1);
-} */
-.social-name {
-  color: #333;
-}
-/* .social-name:hover {
-  background: #1c1c1c;
-} */
