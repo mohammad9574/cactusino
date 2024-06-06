@@ -73,9 +73,8 @@ img {
   text-overflow: ellipsis;
   margin: .5em;
 }
-.social-icon {
-  width: 30px;
-  height: 30px;
+.social-name img {
+  width: 32px;
 }
 /* .social a:hover .social-icon {
   filter: brightness(0) invert(1);
