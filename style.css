@@ -34,7 +34,7 @@ img {
   height: auto;
 }
 .padDown {
-  padding: 40px 0;
+  padding: 30px 0 10px 0;
 }
 .outer {
   padding: 20px;
@@ -69,7 +69,7 @@ img {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin: .5em;
+  margin: 5px;
 }
 .social-name img {
   width: 32px;
