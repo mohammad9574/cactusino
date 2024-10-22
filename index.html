@@ -1,42 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="Content-Language" content="en-US">
-    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore tech tutorials, coding lessons, and digital trends by Mohammad Ahmadi Akbari. Subscribe to his YouTube channel for insightful videos.">
+    <meta name="keywords" content="tech tutorials, coding tutorials, technology trends, YouTube tech videos, Mohammad Ahmadi Akbari, responsive website, minimal design">
+    <meta name="author" content="Mohammad Ahmadi Akbari">
+    <title>MohammadToday | Mohammad Ahmadi Akbari</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph Meta Tags for SEO -->
     <meta property="og:title" content="Mohammad Ahmadi Akbari">
-    <meta name="description" content="The official website of Mohammad Ahmadi Akbari. Find the latest content, and support your favorite creator.">
-    <meta name="keywords" content="Mohammad Ahmadi Akbari, Mohammad Today">
-    <meta property="og:url" content="https://mohammad.today">
-    <meta property="og:instagram" content="https://www.instagram.com/mohammadtodays/">
-    <meta property="og:twitter" content="https://x.com/MohammadTodays">
-    <meta property="og:youtube" content="https://www.youtube.com/@MohammadToday">
-    <meta property="og:description" content="The official website of Mohammad Ahmadi Akbari. Find the latest content, and support your favorite creator.">
-    <meta property="og:image" content="assets/favicon.png">
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta property="og:description" content="Follow Mohammad for tech tutorials, coding insights, and the latest trends in technology.">
+    <meta property="og:image" content="https://www.example.com/path-to-image.jpg">
+    <meta property="og:url" content="https://www.mohammad.today">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mohammad Ahmadi Akbari">
+    <meta name="twitter:description" content="Follow Mohammad for tech tutorials, coding insights, and the latest trends in technology.">
+    <meta name="twitter:image" content="https://www.example.com/path-to-image.jpg">
+    <meta name="twitter:site" content="@MohammadTodays">
+
+    <!-- Schema Markup for YouTuber -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mohammad Ahmadi Akbari",
+      "url": "https://www.mohammad.today",
+      "sameAs": [
+        "https://www.youtube.com/@MohammadToday",
+        "https://x.com/MohammadTodays",
+        "https://www.instagram.com/mohammadtodays"
+      ],
+      "jobTitle": "YouTuber",
+      "description": "Mohammad Ahmadi Akbari, a YouTuber focusing on tech tutorials, coding lessons, and digital content creation.",
+      "image": "https://www.example.com/path-to-image.jpg"
+    }
+    </script>
+
+    <!-- Fonts and Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-    <title>Mohammad Ahmadi Akbari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="site-title">MohammadToday 
+                <button class="about-icon" aria-label="Click to learn more about Mohammad Ahmadi Akbari" title="About Me">ℹ️</button>
+            </h1>
+            <div class="about-text hidden">
+                <h2>About Me</h2>
+                <p>Hi, My Name is Mohammad Ahmadi Akbari, a tech enthusiast and YouTuber focusing on technology trends, coding tutorials, and digital content creation. Follow my journey for more insights!</p>
+            </div>
+            <p class="channel-stats">+700 subscribers | +50 videos | +5 shorts</p>
+        </header>
+        
+        <main>
+            <div class="video-frame">
+                <iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/i2NdiK8y0Uk?si=9iBnGZmXi1QakSSp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
-<div class="outer">
-    <div class="inner">
-        <section class="gap">
-            <img src="assets/profile.png" class="profile" alt="Mohammad Ahmadi Akbari, Mohammad Today">
-            <h1 class="padDown">Mohammad Ahmadi Akbari</h1>
-	    <h2 class="padDown">Content Creator | Founder <a href="https://chapcactus.com" target="_blank">Chap Cactus</a></h2>
-        </section>
-        <div class="gap social">
-            	<a href="https://www.youtube.com/@MohammadToday" class="social-name" target="_blank" rel="nofollow">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE8klEQVR4nO2XyW8bZRjGc2MR3KlUCbIvzerxvo1nscfrTJzESexItOqhEhKXiiLUQlt6CydOgOAfgEZcWRTCJhC0BdETlUgc0ibx2LPbHieBBPKicUiENM4y40SNhB/puf+e932/9/u+pqaGGmqooYYaOkQCffHZMj3VU2HSVIWevFihJ2+qiYkP1NjEx+XY+Fw5Nv5zOZrKlqIprhwek8vUqFyiRv8oUaNQCo1AMZRcL5FJuUgkZYVk8grOzCs4c0/B6Fk5QM8oWOIdGY2/IftjLyq+CC64qc5lZ+qpJrMqxdLtKp1+S6XT9yt0plhhMlA1na5aTUyCGtc8AWpsHMpRzSkoR1JQDo9BOTwKu/BVB5NQJDUPQ5FgdozToGCaE6AEEqCgcVDQGMj+GMi+aNWSNyJKnvBdyUXd4n3UmSPBV5jMBZVJr+1BPyZ42RsByRMGyU2B5KJAdAQl3k7GDoRXmSlCpTN/nTZ4yRkC0RkE0UFUZCfZd0CA9I+nF54E0U6CYMVv14RfS06dVZnM9mmGF20ECAi+sYSiT+qrT2dIc/BjVfhiaATE4DBIGvRJwVtxEKwYiEP+bn0HhjOX6qk8S9CwevVNWLl8DVaxOMg4fSLwAoKBMBhganVg2kzld8dmKRCD7c1N0FT8fA6W4ingAvHjh7cEgBtEr9RanzNm4bWZX0Sj8F9tSTKsXr0FK/4ISFXw44Hnh1AtwPv6APTk92bhtZlfRCNQS6Uvv4XfI6NQ8EeOBZ4fRIEb8H2qD5BIPzALrx3YRX+4ZoDdbqy8dhOW3SEQfZG64PkBP3D9vp90AcrxCdYsvHZYDwqw1425b2CRGgHWHTINzw/4gOvzLOkPcXyiZBa+GsBHHRpgrxuvXodHdgIEDdwofL8XuF6PUKMD4xtm4bVVmfUeLcCuirNfQ5ZgIG8njMH3eaHQ61b1AaKpv83Ca6sy6w2BUW1yPCwGEiAYgOd6PZDvcW3pApQiWgBz8Nqez3rMBogDbwC+cM4NhR7Xuj5AdGzDLLx2SWXdQUPwxdmvIIslgNWgjcFDvsfJ6kcoMlYyC69dUlk3eSTwLVGC5Vdeh4fajWo1Dl91l/OBvgPhMdYsvHbDLrjII1V9AUtArgpueGyg6m4nsJ32O/oA1Oiv9TyJF5z7B9gS5Z2qIxjwNrwu+HyXA/Kd9s90AYqhke/qec/vF0Bblwt4AnI23NCq5PaHB7bD9qG+A8Hk7Xo+IwsOsnbVrRjw2q4/Jvh8hx3y7ba3awQYma7nJ7VgJ2D7z53ntPLJbHXD5Oy44UuKOxwecu3IyzVGaPhSPT+pVScJy5evwaOXrsBDGw68gzgReLbdCmwLEtUHIEbIer6BoouCgiMIBe1dY/Rt02cAvg2B1ResnboAIpo8qxDM9ol9A48Jnm21bMy3tT3RVEsKTv9wuuERYJstH9WE/zcAJmP01mmFzzVb1HxLf2/TQZIDifMKmlg7bfBs85C40jKoP7y1VMTCrTIam5Z8sV9kb7T42OBbLVKuBbnDtlhucM/bnmsyKw5FnxG94R7REwqKDuqC6AzdEB3B9wQHMSPYyS9EG35PQLB5HsFWeASTeUtA5gfR9T34ft9aod8rF/q8MtfrXs6fc/1W6Hbdzfe4Zgtdjpl8l/1dtsN2nW23nS902IhcB9KVO4M8bRq4oYYaaqih/43+AQy0b09LS6azAAAAAElFTkSuQmCC">
-		</a>
+            <div class="social-buttons">
+                <a href="https://www.youtube.com/@MohammadToday?sub_confirmation=1" class="subscribe-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.43em" height="1em" viewBox="0 0 256 180">
+                        <path fill="#f00" d="M250.346 28.075A32.18 32.18 0 0 0 227.69 5.418C207.824 0 127.87 0 127.87 0S47.912.164 28.046 5.582A32.18 32.18 0 0 0 5.39 28.24c-6.009 35.298-8.34 89.084.165 122.97a32.18 32.18 0 0 0 22.656 22.657c19.866 5.418 99.822 5.418 99.822 5.418s79.955 0 99.82-5.418a32.18 32.18 0 0 0 22.657-22.657c6.338-35.348 8.291-89.1-.164-123.134"/>
+                        <path fill="#fff" d="m102.421 128.06l66.328-38.418l-66.328-38.418z"/>
+                    </svg>
+                    Subscribe Now
+                </a>
+            </div>
+        </main>
 
-		<a href="mailto:hi@mohammad.today" class="social-name" target="_blank" rel="nofollow">
-			<img src="data:image/png;base64,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">
-		</a>
-        </div>
+        <footer>
+            <div class="footer-container">
+                <p>For business inquiries, contact <a href="mailto:business@mohammad.today">business@mohammad.today</a></p>
+                <div class="social-icons">
+                    <a href="https://x.com/MohammadTodays" target="_blank" rel="noopener noreferrer" aria-label="Visit Mohammad's X profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="social-icon">
+                            <g>
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/mohammadtodays" target="_blank" rel="noopener noreferrer" aria-label="Visit Mohammad's Instagram profile">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.7 56.7" class="social-icon">
+                            <g>
+                                <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+                                    c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"/>
+                                <circle cx="41.5" cy="16.4" r="2.9"/>
+                                <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+                                    h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+                                    s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+                                    c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
-</div>
+
+    <script defer>
+        document.querySelector('.about-icon').addEventListener('click', function() {
+            document.querySelector('.about-text').classList.toggle('hidden');
+        });
+    </script>
+</body>
 </html>
