@@ -1,22 +1,67 @@
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;line-height:1.6;display:flex;justify-content:center;align-items:center;min-height:100vh;background-color:#181818;color:#F0F0F0}
-.container{width:90%;max-width:1200px;text-align:center;padding:20px;background-color:#202020;border-radius:15px}
-header .site-title{font-size:32px;font-weight:bold;margin:20px auto;color:#F0F0F0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;align-items:center;justify-content:center}
-.channel-stats{font-size:16px;margin:10px 0;color:#BBBBBB}
-.social-buttons{margin-top:20px}
-@keyframes pulse{0%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,0,0,0.4)}70%{transform:scale(1.05);box-shadow:0 0 0 20px rgba(255,0,0,0)}100%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,0,0,0)}}
-.subscribe-button{display:inline-flex;align-items:center;justify-content:center;background-color:#333;color:white;padding:12px 24px;border-radius:50px;text-decoration:none;font-weight:bold;transition:background-color .3s ease,transform .3s ease;animation:pulse 2s infinite;margin-top:20px}
-.subscribe-button svg{margin-right:10px}
-.subscribe-button:hover{background-color:#555;transform:scale(1.1)}
-.video-frame{width:100%;max-width:800px;margin:20px auto;background-color:#2A2A2A;padding:15px;border-radius:12px}
-.video-frame iframe{width:100%;height:450px;border-radius:10px;border:none}
-footer{display:flex;justify-content:center;align-items:center;padding-top:20px}
-.footer-container{width:100%}
-footer p{font-size:14px;color:#BBB}
-footer a{color:#E0E0E0;text-decoration:none;font-weight:600;transition:color .3s ease}
-footer a:hover{color:#FFF}
-.about-icon{cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background-color:#555;color:#FFF;font-size:16px;margin-left:10px;border:none;transition:background-color .3s ease,transform .3s ease}
-.about-icon:hover{background-color:#777;transform:scale(1.1)}
-.hidden{display:none}
-@media (max-width:768px){header .site-title{font-size:28px}.about-icon{width:25px;height:25px;font-size:14px}}
-@media (max-width:480px){header .site-title{font-size:20px}.about-icon{width:20px;height:20px;font-size:12px}}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4; /* Reduced line height */
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px; /* Adjusted font size for small screens */
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
