@@ -1,3 +1,4 @@
+/* ریست پایه */
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +12,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  line-height: 1.6;
 }
 
 .container {
@@ -20,48 +22,76 @@ body {
   max-width: 800px;
   padding: 20px;
   text-align: center;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
+/* استایل عنوان اصلی */
+header h1 {
   font-size: 56px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 14px;
+header h1.fade-in {
+  opacity: 0; /* حالت اولیه برای fade-in */
+}
+
+/* استایل بخش معرفی */
+.intro h2 {
+  font-size: 16px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
-  line-height: 1.4; /* Reduced line height */
-  margin-bottom: 10px; /* Reduced margin */
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
 
-p {
+/* استایل لینک‌های اجتماعی */
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-links li {
   font-size: 14px;
-  line-height: 1.6;
 }
 
-a {
+.social-links a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-a:hover {
+.social-links a:hover,
+.social-links a:focus {
   color: rgba(255, 255, 255, 1);
 }
 
-/* Responsive design */
+/* استایل فوتر */
+footer p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+}
+
+/* طراحی واکنش‌گرا */
 @media (max-width: 600px) {
-  h1 {
-    font-size: 28px; /* Adjusted font size for small screens */
+  header h1 {
+    font-size: 32px;
   }
-
-  h2 {
-    font-size: 12px;
+  
+  .intro h2 {
+    font-size: 14px;
   }
-
-  p {
+  
+  .social-links li {
     font-size: 12px;
   }
 }
